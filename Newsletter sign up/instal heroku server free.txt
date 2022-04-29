@@ -1,0 +1,16 @@
+alur re kerja server node js ke heroku
+npm i nodemon agar auto jalan
+server gratis pakai heroku bisa sampai 5 situs
+touch Procfile di folder yang sedang kamu jalankan
+isi Procfile dengan "web: node app.js"
+ke terminal ketik git init
+kemudian git add .
+git commit -m "first commit"
+ketik heroku create
+ketik git push heroku main
+
+--mengubah file succes.html
+setelah diubah ke terminal 
+git add .
+git commit -m "change succes page h1"
+git push heroku master
