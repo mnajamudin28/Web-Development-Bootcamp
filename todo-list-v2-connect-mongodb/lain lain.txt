@@ -1,0 +1,5 @@
+<% if (kindOfDay === "Saturday" || kindOfDay === "Sunday"){ %>  simbol <% untuk membedakan mana js dan html
+  <h1 style="color: purple"><%= kindOfDay %> ToDo List </h1>
+<% } else{ %>
+  <h1 style="color: blue"><%= kindOfDay %> ToDo List </h1>
+<% } %> 
