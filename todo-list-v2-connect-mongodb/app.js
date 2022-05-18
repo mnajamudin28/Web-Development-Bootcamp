@@ -64,7 +64,7 @@ app.get('/', (req, res) => {
 
 
 app.get("/:customListName", function(req,res){ //custom url membuat url di web browser
-  const customListName = _.capitalize(req.params.customListName);
+  const customListName = _.capitalize(req.params.customListName); //menggunakan lodash
 
   List.findOne({name: customListName}, function(err, foundList){ // foundlist parameter baru dibuat disini
     if(!err){ 
