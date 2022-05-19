@@ -1,0 +1,31 @@
+Membuat Database
+login mongoDB 
+login ke atlas untuk menampung mongodb dan menyimpan semua data
+conect to mongoshell
+mongo "mongodb+srv://fruitsproject.0z39h.mongodb.net/myFirstDatabase" --username moe //diambil dari atlas mongoshell
+conect ke app.js
+"mongodb+srv://moe:putrapamong@fruitsproject.0z39h.mongodb.net/todolistDB" diambil dari atlas
+console log akan memberikan warning useUnifiedTopology: true berikan nilai ini di app.js
+
+
+langkah selanjutnya menghubungkan node js dengan heroku agar bisa di akses oleh semua orang
+ke website HEROKU
+login heroku ke documentation ke node js Get Started
+klik i have ready CLI
+prepare the app klik article https://devcenter.heroku.com/articles/preparing-a-codebase-for-heroku-deployment
+ke mongoshell git init
+git add .
+git commit -m "initial commit"
+ketik heroku login
+ketik heroku create untuk git remote
+touch Procfile
+langkah 6 klik node js pada heroku
+copy specify version paste di package.json dibawah ISC
+buat file git ignore kemudian paste
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
+git add . enter
+git commit -m "Add gitignore, Procfile and update ports"
+git push heroku master
