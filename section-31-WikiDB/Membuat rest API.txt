@@ -1,0 +1,36 @@
+REST API
+-------------
+GET artinya read
+POST artinya create untuk apps form seperti membuat data
+PUT PATCH untuyk update data
+PUT memperbarui database seluruh entri untuk ganti yang sebelumnya
+PATCH memperbarui beberapa bagian
+DELETE hapus data
+----------------------------------------------------------------------------------
+DIY REST API
+download mongo robo3T
+klik kananlocal host
+add database
+ke collection add collection buat file articles (harus jamak)
+doble click articles ke collection insert document untuk membuat data baru
+-----------------------------------------------------------------------------------
+langsung praketk di folder CodeWiki-API
+GET Fetches all the articles
+POST Create one new articles
+install getpostman agar bisa melihat tanpa membuath html css (untuk testing)
+setelah buat POST di vscode ke postman
+my workspace tab baru
+pilih POST ke x-www-form-urlencoded
+KEY isi dengan yang ada di req.body title yaitu title dan content
+klik send jangan lupa mengaktifkan mongod dan jalankan server node js dan file akan terkirim ke mongoDB cek di robo 3T
+-----------------------------------------------------------------------------------
+DELETE
+write code in vscode setelah selesai
+pergi ke POSTMAN ubah menjadi DELETE
+-----------------------------------------
+PUT di postman untuk update semua dari title
+-------------
+PATCH uupdate pada bagian yang di inginkan
+localhost:3000/articles/Jack%20Bauer di postman untuk update article jack
+--------------
+DELETE menghaspus data pada database
